@@ -52,7 +52,6 @@ function Godb:CreateUI()
         local tween = game:GetService("TweenService"):Create(mainFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Position = targetPosition})
         tween:Play()
         tween.Completed:Wait()
-        mainFrame.Visible = mainFrame.Position.X.Offset > 0
         toggleButton.Text = mainFrame.Visible and "<" or ">"
     end)
 
